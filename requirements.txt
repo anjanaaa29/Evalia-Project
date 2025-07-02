@@ -1,27 +1,28 @@
-# Streamlit web framework
+# === Streamlit Web App ===
 streamlit==1.35.0
 
-# In-browser mic support
+# === Mic Input Support ===
 streamlit-mic-recorder==0.0.5
 
-# Google Cloud Speech-to-Text SDK
+# === Google Cloud Speech-to-Text ===
 google-cloud-speech==2.26.0
 
-# Plotly for interactive graphs
-plotly==5.21.0
-
-# Pandas for data handling
-pandas==2.2.2
-
-# Load .env secrets
-python-dotenv==1.0.1
-
-# Groq LLM client (ensure API key is set via env)
+# === LLM Integration ===
 groq==0.6.0
 
-# Audio processing (optional, if you're handling raw .wav)
+# === Environment Variable Support ===
+python-dotenv==1.0.1
+
+# === Data Handling & Visualization ===
+pandas==2.2.2
+plotly==5.21.0
+
+# === Audio Processing (if handling raw .wav) ===
 soundfile==0.12.1
 numpy==1.26.4
 
-# Typing & dev tools (optional but useful)
+# === Typing & Dev Tools ===
 typing-extensions==4.12.0
+
+# === Required for spaCy model download (if still used in your code) ===
+spacy==3.7.4
