@@ -1,0 +1,27 @@
+# Streamlit web framework
+streamlit==1.35.0
+
+# In-browser mic support
+streamlit-mic-recorder==0.0.5
+
+# Google Cloud Speech-to-Text SDK
+google-cloud-speech==2.26.0
+
+# Plotly for interactive graphs
+plotly==5.21.0
+
+# Pandas for data handling
+pandas==2.2.2
+
+# Load .env secrets
+python-dotenv==1.0.1
+
+# Groq LLM client (ensure API key is set via env)
+groq==0.6.0
+
+# Audio processing (optional, if you're handling raw .wav)
+soundfile==0.12.1
+numpy==1.26.4
+
+# Typing & dev tools (optional but useful)
+typing-extensions==4.12.0
