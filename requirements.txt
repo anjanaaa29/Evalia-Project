@@ -7,8 +7,13 @@ streamlit-mic-recorder==0.0.5
 # === Google Cloud Speech-to-Text ===
 google-cloud-speech==2.26.0
 
-# === LLM Integration ===
+# === LLM Integrations ===
+openai==1.30.1
 groq==0.6.0
+
+# === Whisper ===
+whisper==1.1.10
+torch==2.2.2
 
 # === Environment Variable Support ===
 python-dotenv==1.0.1
@@ -17,12 +22,12 @@ python-dotenv==1.0.1
 pandas==2.2.2
 plotly==5.21.0
 
-# === Audio Processing (if handling raw .wav) ===
+# === Audio Processing ===
 soundfile==0.12.1
 numpy==1.26.4
 
-# === Typing & Dev Tools ===
-typing-extensions==4.12.0
-
-# === Required for spaCy model download (if still used in your code) ===
+# === NLP (if used)
 spacy==3.7.4
+
+# === Typing Utilities
+typing-extensions==4.12.0
