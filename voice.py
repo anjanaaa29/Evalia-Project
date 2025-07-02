@@ -6,10 +6,9 @@ from streamlit_mic_recorder import mic_recorder
 import streamlit as st
 
 class VoiceProcessor:
-    def __init__(self, credentials_path="ai-interview-54321-c85b0cb75e26.json"):
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
-        self.client = speech.SpeechClient()
-        self.silence_duration=3.0
+    def __init__(self):
+        self.client = speech.SpeechClient.from_service_account_file("ai-interview-54321-c85b0cb75e26.json")
+        self.silence_duration = 3.0        
     
     def _get_wav_sample_rate(self, audio_bytes):
         """Detects sample rate from WAV header"""
